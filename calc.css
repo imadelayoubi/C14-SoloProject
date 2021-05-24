@@ -1,0 +1,71 @@
+.calcbtn {
+  background-color: skyblue;
+  width: 10%;
+  height: 50px;
+  margin: 0.5rem;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#input {
+  border: thick solid black;
+  margin-top: 1rem;
+  margin-right: 5rem;
+  width: 97%;
+  height: 50px;
+}
+#btns {
+  margin-top: 2rem;
+}
+
+#calculator {
+  border: thick solid #0000ff;
+  width: 500px;
+  height: 500px;
+}
+.row {
+  width: 700px;
+  margin-left: 2.5rem;
+  margin-top: 1rem;
+}
+.gotobtn {
+  margin-left: 3.5rem;
+  margin-top: 1rem;
+  width: 30%;
+  height: 50px;
+  font-weight: bold;
+  background-color: lightcoral;
+}
+#currencyconv {
+  margin-top: 3rem;
+  border: thick solid #0000ff;
+  width: 500px;
+  height: 100px;
+}
+.convert {
+  background-color: lightcoral;
+}
+#innercurrencyitem {
+  margin-top: 1.5rem;
+}
+#currencytitle {
+  margin-left: 1rem;
+  font-size: 20px;
+}
+
+#temperaturetitle {
+  margin-left: 1rem;
+  font-size: 20px;
+}
+#temperaturconv {
+  margin-top: 3rem;
+  border: thick solid #0000ff;
+  width: 500px;
+  height: 100px;
+}
+#innertemperatureitem {
+  margin-top: 1.5rem;
+}
+#changescreen {
+  display: inline-table;
+}
