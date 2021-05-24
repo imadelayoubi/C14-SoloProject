@@ -1,80 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="calc.css" />
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.js"
-      integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <title>Document</title>
-  </head>
-  <body>
+</head>
+
+<body>
+
     <div id="calculator">
-      <div id="screen">
-        <input id="input" disabled />
-      </div>
-      <div id="btns">
-        <div class="row" id="firstrow">
-          <button class="calcbtn">7</button>
-          <button class="calcbtn">8</button>
-          <button class="calcbtn">9</button>
-          <button class="calcbtn">/</button>
+        <div id="changescreen">
+            <button class="gotobtn" id="currency">Currency Convertor</button>
+            <button class="gotobtn" id="temperature">Temperature Convertor</button>
         </div>
-        <div class="row" id="secondrow">
-          <button class="calcbtn">4</button>
-          <button class="calcbtn">5</button>
-          <button class="calcbtn">6</button>
-          <button class="calcbtn">*</button>
+        <div id="screen">
+            <input id="input"/>
         </div>
-        <div class="row" id="thirdrow">
-          <button class="calcbtn">1</button>
-          <button class="calcbtn">2</button>
-          <button class="calcbtn">3</button>
-          <button class="calcbtn">-</button>
+        <div id="btns">
+            <div class="row" id="firstrow">
+                <button class="calcbtn" >7</button>
+                <button class="calcbtn" >8</button>
+                <button class="calcbtn">9</button>
+                <button class="calcbtn">/</button>
+            </div>
+            <div class="row" id="secondrow">
+                <button class="calcbtn">4</button>
+                <button class="calcbtn">5</button>
+                <button class="calcbtn">6</button>
+                <button class="calcbtn">*</button>
+            </div>
+            <div class="row" id="thirdrow">
+                <button class="calcbtn">1</button>
+                <button class="calcbtn">2</button>
+                <button class="calcbtn">3</button>
+                <button class="calcbtn">-</button>
+            </div>
+            <div class="row" id="fourthrow">
+                <button class="calcbtn">.</button>
+                <button class="calcbtn">0</button>
+                <button id="return">=</button>
+                <button class="calcbtn">+</button>
+            </div>
         </div>
-        <div class="row" id="fourthrow">
-          <button class="calcbtn">.</button>
-          <button class="calcbtn">0</button>
-          <button class="calcbtn">=</button>
-          <button class="calcbtn">+</button>
-        </div>
-      </div>
-      <div id="changescreen">
-        <button class="gotobtn" id="currency">Currency Convertor</button>
-        <button class="gotobtn" id="temperature">Temperature Convertor</button>
-      </div>
+
     </div>
 
     <div id="currencyconv">
-      <p id="currencytitle">Convert to Tunisian Dinar</p>
-      <div id="innercurrencyitem">
-        <label for="currency">Choose a currency:</label>
-        <select id="currency">
-          <option value="Euro">Euro</option>
-          <option value="Dollar">Dollar</option>
-        </select>
-        <input id="currencyinput" type="number" />
-        <button class="convert">Convert</button>
-      </div>
+        <p id="currencytitle">Convert to Tunisian Dinar</p>
+        <div id="innercurrencyitem">
+            <label for="currency">Choose a currency:</label>
+            <select id="currency">
+                <option value="Euro">Euro</option>
+                <option value="Dollar">Dollar</option>
+            </select>
+            <input id="currencyinput" type="number" />
+            <button id="convert">Convert</button>
+        </div>
     </div>
 
     <div id="temperaturconv">
         <!-- <img id="tempimg" src=" https://www.pngkey.com/png/detail/297-2976588_temperature-conversion-convert-temperature-icon.png">  -->
-      <p id="temperaturetitle">Convert Temperature</p>
-      <div id="innertemperatureitem">
-      <label for="temperature">Choose a temperature:</label>
-      <select id="temperature">
-        <option value="Celsius">Celsius</option>
-        <option value="Fahrenheit">Fahrenheit</option>
-      </select>
-        <input id="temperatureinput" type="number" />
-        <button class="convert">Convert</button>
-    </div>
+        <p id="temperaturetitle">Convert Temperature</p>
+        <div id="innertemperatureitem">
+            <label for="temperature">Choose a temperature:</label>
+            <select id="temperature">
+                <option value="Celsius">Celsius</option>
+                <option value="Fahrenheit">Fahrenheit</option>
+            </select>
+            <input id="temperatureinput" type="number" />
+            <button class="convert">Convert</button>
+        </div>
 
-    <script type="text/javascript" src="calc.js"></script>
-  </body>
+        <script type="text/javascript" src="calc.js"></script>
+</body>
+
 </html>
