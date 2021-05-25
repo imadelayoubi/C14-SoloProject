@@ -17,14 +17,16 @@
         <div id="changescreen">
             <button class="gotobtn" id="currency">Currency Convertor</button>
             <button class="gotobtn" id="temperature">Temperature Convertor</button>
+        <button class="gotobtn" id="calc">Calculator</button>
+
         </div>
         <div id="screen">
-            <input id="input"/>
+            <input id="input" />
         </div>
         <div id="btns">
             <div class="row" id="firstrow">
-                <button class="calcbtn" >7</button>
-                <button class="calcbtn" >8</button>
+                <button class="calcbtn">7</button>
+                <button class="calcbtn">8</button>
                 <button class="calcbtn">9</button>
                 <button class="calcbtn">/</button>
             </div>
@@ -47,10 +49,7 @@
                 <button class="calcbtn">+</button>
             </div>
         </div>
-
-    </div>
-
-    <div id="currencyconv">
+        <div class='innerdiv' id="currencyconv">
         <p id="currencytitle">Convert to Tunisian Dinar</p>
         <div id="innercurrencyitem">
             <label for="currency">Choose a currency:</label>
@@ -64,8 +63,7 @@
         </div>
     </div>
 
-    <div id="temperaturconv">
-        <!-- <img id="tempimg" src=" https://www.pngkey.com/png/detail/297-2976588_temperature-conversion-convert-temperature-icon.png">  -->
+    <div class='innerdiv' id="temperaturconv">
         <p id="temperaturetitle">Convert Temperature</p>
         <div id="innertemperatureitem">
             <label for="temperature">Choose a temperature:</label>
@@ -78,6 +76,10 @@
             <button class="convert">Convert</button>
         </div>
 
+
+    </div>
+
+    
         <script type="text/javascript" src="calc.js"></script>
 </body>
 

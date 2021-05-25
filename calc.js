@@ -9,9 +9,6 @@
 // document.getElementsByClassName('.calcbtn').innerHTML.eval('5+5')
 
 var number1 = ''
-var number2 = ''
-// // var operator = ''
-var total = ''
 
 $(document).ready(function () {
     $(".calcbtn").click(function () {
@@ -70,20 +67,30 @@ $(document).ready(function () {
 })
 
 
+$('#btns').hide()
+$('#temperaturconv').hide()
+$('#currencyconv').hide()
+
+$("#currency").click(function () {
+    $('#btns').hide()
+    $('#temperaturconv').hide()
+    $('#currencyconv').show(1000)
+});
+$("#temperature").click(function () {
+    $('#btns').hide()
+    $('#temperaturconv').show(1000)
+    $('#currencyconv').hide()
+
+});
+$("#calc").click(function () {
+    $('#btns').show(1000)
+    $('#temperaturconv').hide()
+    $('#currencyconv').hide()
+
+});
 
 
 
 
-
-
-
-// $("#converter").click(function () {
-//     var temperature = parseInt($("#temperatureinput").text(), 10);
-//     if ($("#temperatureinput").hasClass("F")) {
-//         var celsius = Math.floor((temperature - 32) * 5 / 9);
-//         $("#newTemp").html(celsius);
-//         $("#temp").attr("class", "C");
-//     })
-// }
 
 
