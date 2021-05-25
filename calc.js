@@ -31,7 +31,7 @@ $("select#currency").change(function () {
     console.log("You have selected the currency - " + selectedCurrency);
 });
 var temp = ''
-$("select#temperature").change(function () {
+$("select#temperatureselector").change(function () {
     var selectedTemperature = $(this).children("option:selected").val();
     temp = selectedTemperature
     console.log("You have selected the temperature - " + selectedTemperature);
@@ -40,6 +40,7 @@ $(document).ready(function () {
     $('.convert').click(function () {
         if (temp === "Celsius") {
             var f = $('#temperatureinput').val()
+            console.log(f)
             f = (f * 9 / 5 + 32)
             $('#input').val(f)
         } else if (temp === "Fahrenheit") {
@@ -55,7 +56,7 @@ $(document).ready(function () {
     $('#convert').click(function () {
         if (curr === "Euro") {
             var d = $('#currencyinput').val()
-            d = (d * 3)
+            d = Math.abs(d * 3)
             $('#input').val(d)
         } else if (curr === "Dollar") {
             d = $('#currencyinput').val()
@@ -89,7 +90,14 @@ $("#calc").click(function () {
 
 });
 
+$(document).ready(function () {
+    $("#clear").click(function () {
+        alert('All Clear')
+        $('#input').val('')
+        number1 = ''
 
+    })
+});
 
 
 
