@@ -60,7 +60,7 @@ $(document).ready(function () {
             $('#input').val(d)
         } else if (curr === "Dollar") {
             d = $('#currencyinput').val()
-            d = (d * 2.6)
+            d = Math.abs(d * 2.6)
             $('#input').val(d)
         }
 
